@@ -1,0 +1,99 @@
+// selectores comunes a todo el proyecto
+*{
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+h2,h3,h4{
+    color: $hColor;
+}
+h1{
+    font-size: $textXl;
+    margin-bottom: 10px 0;
+    color: $white;
+}
+h2{
+    font-size: $textLg;
+}
+p{
+    font-size: $textMd;
+    line-height: 1.3em;
+    font-weight: $textLight;
+}
+header img{
+    width: 100%;
+}
+/* utilities del proyecto */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-bold{
+    font-weight: textBold;
+}
+.text-color-carousel{
+    text-decoration-color: blue;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container1{
+    background-color: rgb(116, 162, 190);
+    width: 75%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: solid 3px blue;
+}
+.box-top{
+    padding: 10px 0;
+    text-align: center;
+    background-color: red;
+    color: $white;
+    font-size: $textMd;
+}
+/*  ========= footer ========= */
+footer{
+    background-color: $mainColor;
+    padding: 6px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        list-style-type: none;
+        display: flex;
+        li a{
+            text-decoration: none;
+            font-size: $textMd;
+            margin-right: 30px;
+        }
+    }
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+.flex-direction{
+    flex-direction: row;
+}
+.flex-wrap{
+    flex-wrap: nowrap;
+}
+.flex-flow{
+    flex-flow: row wrap;
+}
+.justify-content{
+    justify-content: space-evenly;
+}
+.align-content{
+    align-content: baseline;
+}

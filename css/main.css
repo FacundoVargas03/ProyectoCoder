@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+h2, h3, h4 {
+  color: darkslateblue;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px 0;
+  color: rgb(235, 229, 229);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+header img {
+  width: 100%;
+}
+
+/* utilities del proyecto */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: textBold;
+}
+
+.text-color-carousel {
+  text-decoration-color: blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container1 {
+  background-color: rgb(116, 162, 190);
+  width: 75%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: solid 3px blue;
+}
+
+.box-top {
+  padding: 10px 0;
+  text-align: center;
+  background-color: red;
+  color: rgb(235, 229, 229);
+  font-size: 1em;
+}
+
+/*  ========= footer ========= */
+footer {
+  background-color: lightskyblue;
+  padding: 6px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+}
+footer ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 30px;
+}
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-direction {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-flow {
+  flex-flow: row wrap;
+}
+
+.justify-content {
+  justify-content: space-evenly;
+}
+
+.align-content {
+  align-content: baseline;
+}
+
+nav {
+  background-color: lightskyblue;
+  height: 100px;
+  padding: 6px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 300;
+  margin-right: 10px;
+}
+nav img {
+  width: 100px;
+}
+
+.productos-destacados {
+  padding: 6px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productos-destacados figure {
+  width: 30%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productos-destacados figure img {
+  width: 120%;
+  height: 100%;
+}
+.productos-destacados figure button {
+  border: none;
+  background-color: lightskyblue;
+  color: rgb(18, 17, 17);
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+.productos-destacados figcaption {
+  color: blue;
+  font-size: 1em;
+}
+.productos-destacados p {
+  text-align: center;
+}
+
+.productos-shop {
+  padding: 6px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productos-shop figure {
+  width: 30%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.productos-shop figure img {
+  width: 300px;
+  height: 400px;
+}
+.productos-shop figcaption {
+  color: blue;
+  font-size: 1em;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "niños mujeres" "niños hombres";
+  gap: 5px;
+  padding: 20px;
+}
+.shop .niños {
+  grid-area: niños;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.shop .mujeres {
+  grid-area: mujeres;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.shop .hombres {
+  grid-area: hombres;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.shop figure img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (width < 768px) {
+  nav {
+    flex-direction: column;
+  }
+  header img {
+    width: 100%;
+    height: 180px;
+  }
+  main h2 {
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div a {
+    margin-right: 20px;
+  }
+  footer div a ul li {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .productos-destacados figure {
+    width: 100%;
+  }
+  .productos-destacados figure button {
+    width: 100%;
+  }
+  .productos-shop figure {
+    width: 100%;
+  }
+  .shop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "niños" "mujeres" "hombres";
+    gap: 5px;
+    padding: 20px;
+  }
+  .shop figure img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
