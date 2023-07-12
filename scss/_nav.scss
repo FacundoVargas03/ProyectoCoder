@@ -9,10 +9,11 @@ nav{
     ul{
         list-style: none;
         display: flex;
-        li a{
+        li{ a{
             text-decoration: none;
             font-size: $textLight;
             margin-right: 10px;
+            }
         }
     }
     img{
