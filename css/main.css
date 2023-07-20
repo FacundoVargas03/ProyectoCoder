@@ -12,7 +12,7 @@ h2, h3, h4 {
 h1 {
   font-size: 3em;
   margin-bottom: 10px 0;
-  color: rgb(235, 229, 229);
+  color: blue;
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
 p {
   font-size: 1em;
   line-height: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 header img {
@@ -70,7 +70,7 @@ header img {
   padding: 10px 0;
   text-align: center;
   background-color: red;
-  color: rgb(235, 229, 229);
+  color: rgb(254, 254, 254);
   font-size: 1em;
 }
 
@@ -117,6 +117,12 @@ footer img {
   align-content: baseline;
 }
 
+.scale:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: all 1s;
+}
+
 nav {
   background-color: lightskyblue;
   height: 100px;
@@ -132,7 +138,7 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  font-size: 300;
+  font-size: 2em;
   margin-right: 10px;
 }
 nav img {
@@ -191,6 +197,14 @@ nav img {
   width: 300px;
   height: 400px;
 }
+.productos-shop figure button {
+  border: none;
+  background-color: lightskyblue;
+  color: rgb(18, 17, 17);
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
 .productos-shop figcaption {
   color: blue;
   font-size: 1em;
@@ -231,6 +245,14 @@ nav img {
 .shop figure img {
   width: 100%;
   height: 100%;
+}
+.shop figure button {
+  border: none;
+  background-color: lightskyblue;
+  color: rgb(18, 17, 17);
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 6px;
 }
 
 @media (width < 768px) {

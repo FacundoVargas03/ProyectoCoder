@@ -10,7 +10,7 @@ h2,h3,h4{
 h1{
     font-size: $textXl;
     margin-bottom: 10px 0;
-    color: $white;
+    color: $blue;
 }
 h2{
     font-size: $textLg;
@@ -18,7 +18,7 @@ h2{
 p{
     font-size: $textMd;
     line-height: 1.3em;
-    font-weight: $textLight;
+    font-weight: $textRegular;
 }
 header img{
     width: 100%;
@@ -96,4 +96,9 @@ footer{
 }
 .align-content{
     align-content: baseline;
+}
+.scale:hover{
+	transform: scale(1.5);
+	cursor: pointer;
+	transition: all 1s;
 }
