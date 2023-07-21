@@ -1,15 +1,10 @@
 nav{
     background-color: $mainColor;
-    height: 100px;
-    padding: 6px 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    ul{
+        ul{
         list-style: none;
         display: flex;
-        li{ a{
+        li{ 
+            a{
             text-decoration: none;
             font-size: $textLg;
             margin-right: 10px;
@@ -17,6 +12,6 @@ nav{
         }
     }
     img{
-        width: 100px;
+        width: 80px;
     }
 }

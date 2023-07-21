@@ -90,7 +90,6 @@ footer ul {
 footer ul li a {
   text-decoration: none;
   font-size: 1em;
-  margin-right: 30px;
 }
 footer img {
   width: 50px;
@@ -123,14 +122,57 @@ footer img {
   transition: all 1s;
 }
 
+/*  ========= Responsive ========= */
+@media (width < 768px) {
+  nav {
+    flex-direction: column;
+  }
+  header img {
+    width: 100%;
+    height: 180px;
+  }
+  main h2 {
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div a {
+    margin-right: 10px;
+  }
+  footer div ul li {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .productos-destacados figure {
+    width: 100%;
+  }
+  .productos-destacados figure button {
+    width: 100%;
+    padding: 20px;
+  }
+  .productos-shop figure {
+    width: 100%;
+  }
+  .productos-shop figure button {
+    width: 100%;
+    padding: 20px;
+  }
+  .shop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "niños" "mujeres" "hombres";
+    gap: 5px;
+    padding: 20px;
+  }
+  .shop figure img {
+    width: 100%;
+  }
+}
 nav {
   background-color: lightskyblue;
-  height: 100px;
-  padding: 6px 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 nav ul {
   list-style: none;
@@ -142,7 +184,7 @@ nav ul li a {
   margin-right: 10px;
 }
 nav img {
-  width: 100px;
+  width: 80px;
 }
 
 .productos-destacados {
@@ -170,9 +212,6 @@ nav img {
   padding: 6px;
   margin: 10px 0;
   border-radius: 6px;
-  transform: scale(1.5);
-  cursor: pointer;
-  transition: all 1s;
 }
 .productos-destacados figcaption {
   color: blue;
@@ -180,6 +219,15 @@ nav img {
 }
 .productos-destacados p {
   text-align: center;
+}
+
+.btn-color {
+  border: none;
+  background-color: lightskyblue;
+  color: rgb(18, 17, 17);
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 6px;
 }
 
 .productos-shop {
@@ -207,9 +255,6 @@ nav img {
   padding: 6px;
   margin: 10px 0;
   border-radius: 6px;
-  transform: scale(1.5);
-  cursor: pointer;
-  transition: all 1s;
 }
 .productos-shop figcaption {
   color: blue;
@@ -259,9 +304,17 @@ nav img {
   padding: 6px;
   margin: 10px 0;
   border-radius: 6px;
-  transform: scale(1.5);
-  cursor: pointer;
-  transition: all 1s;
+}
+
+.btn-color {
+  border: none;
+  background-color: lightskyblue;
+  color: rgb(18, 17, 17);
+  padding: 6px;
+  margin: 10px 0;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (width < 768px) {

@@ -21,9 +21,6 @@
             padding: 6px;
             margin: 10px 0;
             border-radius: 6px;
-            transform: scale(1.5);
-	        cursor: pointer;
-	        transition: all 1s;
         }
     }
     figcaption{
@@ -76,9 +73,15 @@
         padding: 6px;
         margin: 10px 0;
         border-radius: 6px;
-        transform: scale(1.5);
-	    cursor: pointer;
-	    transition: all 1s;
     }
 }
 } 
+.btn-color{border: none;
+    background-color: $mainColor;
+    color: $black;
+    padding: 6px;
+    margin: 10px 0;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
