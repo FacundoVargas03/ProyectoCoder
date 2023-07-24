@@ -23,6 +23,9 @@ p{
 header img{
     width: 100%;
 }
+iframe {
+    width: 300px;
+}
 /* utilities del proyecto */
 .text-center{
     text-align: center;
@@ -97,11 +100,16 @@ footer{
 .align-content{
     align-content: baseline;
 }
-.scale:hover{
-	transform: scale(1.5);
+.scale-hover{
+	transform: scale(1.1);
 	cursor: pointer;
 	transition: all 1s;
 }
+.button{
+text-align: center;
+align-content: center;
+}
+
 /*  ========= Responsive ========= */
 @media (width < 768px){
     nav{
