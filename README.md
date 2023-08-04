@@ -18,6 +18,7 @@ Para llevar acabo este proyecto utilice los siguientes lenguajes y tecnologias.
 Links:
 https://github.com/FacundoVargas03/ProyectoCoder
 https://facundovargas03.github.io/ProyectoCoder/
+https://yabal-estilo.netlify.app
 
 
 Con respecto al curso, me senti muy bien en el transcurso de cursado, super acompañado tanto por tutores como por la profesora.
